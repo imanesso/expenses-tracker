@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Description: Expense Tracker</title>
+
+    <style>
+        body {
+            margin: 40px auto;
+            max-width: 650px;
+            line-height: 1.6;
+            font-size: 18px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #454545;
+            padding: 0 10px
+        }
+        header {
+            display: flex;
+        }
+        h1, h2, h3 {
+            line-height: 1.2
+        }
+        h2, h3{
+            border-bottom: 1px solid #CCCCCC;
+        }
+        h2{
+            border-top: 1px solid #CCCCCC;
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <h1>Expenses Tracker</h1>
+</header>
+
+<section title="About">
+    <h2>About</h2>
+    <p>This application can be used to track your daily expenses. It was created for the FHNW module webec</p>
+</section>
+<section title="Content">
+    <h2>General Project Description</h2>
+    <p>The expense tracker is used to track expenses and to categorise them.
+        The web-application also has role based security which allows different things for the admins and normal users</p>
+    <p>I seeded some default data to make it easier to test after a start in the file <code>Bootstrap.groovy</code>.</p>
+    <ul>
+        <li>User: admin, password: admin</li>
+        <li>User: test, password: test</li>
+    </ul>
+
+    <h3>Project Satisfaction</h3>
+    <p>I have never worked with Grails before and I am not very experienced in web development. I struggled at first, but after a while I started to like it</p>
+    <p>I could not finish everything the way I wanted, because I struggled with the time. In the beginning I wanted to export the monthly statement to pdf, but I just couldn't make it work, so I reverted it completely.
+        But overall I am happy that I have a functioning solution.
+    </p>
+    <h2>Features</h2>
+    <h3>Security</h3>
+    <h5>Role Admin</h5>
+    <p>This is how a navigation bar of an admin looks like</p>
+    <img src="grails-app/assets/images/projectdescription/admin-nav.JPG" alt="admin navigation" width="750"/>
+    <p>Users with the role admin can create new users and categories additionally to all the functions that a normal user has.
+        They can also see the expenses of all users in a parent-child view when they click on the user to show them.</p>
+
+    <h5>Role User</h5>
+    <p>This is how a navigation bar of a user looks like</p>
+    <img src="grails-app/assets/images/projectdescription/user-nav.JPG" alt="user navigation" width="750"/>
+    <p>Normal users can create expenses for all the categories that the admins define</p>
+    <p>The user can also see a monthly statement of all the expenses that they had</p>
+    <p>the user can see the expenses for all the categories that the admin created</p>
+
+    <h3>Expenses</h3>
+    <img src="grails-app/assets/images/projectdescription/expenses.JPG" alt="expenses" width="500"/>
+    <p>The CRUD functionalities are accessible in the index page, but there are also 2 new functionalities there</p>
+    <ul>
+        <li>Analyse: this page shows all the expenses for each category and their total amount</li>
+        <li>Statement: The user can select a month to show a monthly statement of all the expenses</li>
+    </ul>
+
+    <h3>Categories</h3>
+    <p>The basic CRUD functionalities are accessible only for the users with the admin role</p>
+
+    <h3>User Management</h3>
+    <p>The user and role management is only accessible for admins. The pages are used for basic CRUD functions</p>
+    <p>The admin can also see all expenses of a user in a parent child view when they show a user</p>
+</section>
+
+<footer>
+    &copy; Anessollah Ima
+</footer>
+
+</body>
+</html>
